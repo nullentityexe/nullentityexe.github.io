@@ -3,6 +3,6 @@
   image: basicBlob.png
 
 - title: Blog
-  link: blog.html
+  link: /blog
   image: basicBlob.png
 
