@@ -2,4 +2,32 @@
 layout: default
 ---
 <title>Null's Blog</title>
-<h1>Hello</h1>
+
+
+<h1>Welcome to my blog!</h1>
+{% for post in site.posts %}
+    <ul>
+        <div class="blogPostContainer">
+            <a class = "postTitle" href="{{post.url}}" ><h1 class = "postTitle">{{post.title}}</h1></a>
+            <p>{{post.dateInfo}}</p>
+            <h3>{{post.description}}</h3>
+        </div>
+    </ul>
+
+{% endfor %}
+
+
+<style>
+.blogPostContainer{
+    border-top: dashed #edece8;
+    display: inline-block;
+}.postTitle{
+    text-decoration: none;
+    transition: 400ms ease;
+}.postTitle:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}h3{
+    font-weight: normal;
+}
+</style>

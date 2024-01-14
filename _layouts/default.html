@@ -2,7 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="{{'/assets/css/main.scss' | absolute_url}}">
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+</head>
   <body>
     <nav class="navbar">
       <ul class="navbar-nav">
@@ -22,6 +27,16 @@
         {% endfor %}
       </ul>
     </nav>
+
+    {% if page.type == 'post' %}
+      <style>
+        html{display: block;};
+        
+      </style>
+      {% endif %}
+
+
+
     <main>
       {{ content }}
     </main>
@@ -107,7 +122,17 @@
         transform: rotate(-360deg)
       }html{
         background-color: #faf6ea;
+      }*{
+        font-family:'Quicksand', sans-serif;
+        text-align: center;
+        padding: 5px auto;
+        
+      }blog{
+        width: 80%
+        
       }
+      
+
     </style>
 
   </body>
