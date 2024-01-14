@@ -4,5 +4,3 @@ title: "" # the name of your site, e.g. ACME Corp.
 gem "github-pages", "~> 228", group: :jekyll_plugins
 
 
-sass:
-  sass_dir: _sass
