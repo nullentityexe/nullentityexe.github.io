@@ -6,7 +6,7 @@ permalink: /blog/
 
 
 <h1>Welcome to my blog!</h1>
-{% for post in site.posts %}
+{% for post in site.posts l%}
     <ul>
         <div class="blogPostContainer">
             <a class = "postTitle" href="{{post.url}}" ><h1 class = "postTitle">{{post.title}}</h1></a>
