@@ -28,18 +28,13 @@
       </ul>
     </nav>
 
-    {% if page.type == 'post' %}
-      <style>
-        main{width: 70vw;};
-        
-      </style>
-      {% endif %}
+   
 
 
 
-    <main>
+    <div id="main">
       {{ content }}
-    </main>
+    </div>
     
 
 
@@ -51,7 +46,7 @@
         text-decoration: underline;
       }
       :root{
-        font-size: 16px;
+        font-size: 18px;
         --text-primary: #b6b6b6;
         --text-secondary: #ececec;
         --bg-primary: #23232e;
@@ -63,9 +58,10 @@
         margin:0;
         padding:0;
       }
-      main{
+      #main{
         margin-left: 5rem;
         padding:1rem;
+        text-align: center;
       }
       body::-webkit-scrollbar{
         width: 0.25 rem;
@@ -124,18 +120,8 @@
         background-color: #faf6ea;
       }*{
         font-family:'Quicksand', sans-serif;
-        text-align: center;
         padding: 5px auto;
-        
-      }.mainHeader{
-          font-size: 45px;
-      }.secondHeader{
-        font-size: 30px;
-        text-align: left;
       }
-      
-
-    </style>
-
+      </style>
   </body>
 </html>

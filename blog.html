@@ -6,7 +6,7 @@ permalink: /blog/
 
 
 <h1>Welcome to my blog!</h1>
-{% for post in site.posts l%}
+{% for post in site.posts %}
     <ul>
         <div class="blogPostContainer">
             <a class = "postTitle" href="{{post.url}}" ><h1 class = "postTitle">{{post.title}}</h1></a>
@@ -30,5 +30,7 @@ permalink: /blog/
     text-decoration: underline;
 }h3{
     font-weight: normal;
+}.caption{
+    font-size: 12px;
 }
 </style>

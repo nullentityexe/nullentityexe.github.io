@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<h1 class ="mainHeader"> {{page.title}} </h1>
+<p id="blogInfo"> {{page.description}} <br> Date: {{page.dateInfo}} </p>
+</hr>
+
+<div id="main">
+    {{content}}
+</div>
+
+<style>
+.mainHeader{
+    font-size: 45px;
+    margin-left: 10rem;
+    text-align: center;
+}.secondHeader{
+  font-size: 30px;
+  text-align: left;
+  margin-left: 5rem;
+} #main{
+    width: 60vw;
+}#blogInfo{
+    margin-left: 10rem;
+}
+
+</style>
