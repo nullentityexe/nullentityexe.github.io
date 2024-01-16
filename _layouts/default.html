@@ -121,7 +121,23 @@
       }*{
         font-family:'Quicksand', sans-serif;
         padding: 5px auto;
+      }@keyframes appear {
+        0% { left: 500px; opacity: 0; }
+        100% { left: 16px; opacity: 1; }  
+      }#homeIMG{
+        -webkit-animation: appear 2s;
+        animation: appear 2s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }#toProjects{
+        transform: rotate(0deg);
+        transition: transform 400ms;
+      }#toProjects:hover{
+        transform: rotate(-100deg);
+        transform: scale(1.2);
       }
+      
+
       </style>
   </body>
 </html>
