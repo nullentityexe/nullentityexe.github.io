@@ -2,12 +2,35 @@
 layout: default
 ---
 <html>
-    <body>
-        <img id="homeIMG" src="assets/images/basicBlob.png">
-    </body>
-    <h2>Hey there!</h2>
-    <p>My name is Null! <br> I play videogames and mess around with code and other knicknacks.</p>
+    <!--parallax is this epico background scroll effect!-->
+    
 
-    <img id="toProjects" src="assets/images/basicBlob.png">
+    <body>
+    <div class="parallax" id="parallax1"></div>
+        <h2>Hey there!</h2>
+        <img src="assets/images/basicBlob.png">
+        <p>My name is Null! <br> I play videogames and mess around with code and other knicknacks.</p>
+    <div class="parallax" id="parallax2"></div>
+    <p>Check out some of my projects</p>
+</body>
+    
+
+ 
 
 </html>
+
+<style>
+    .parallax{
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:0;
+    }#parallax2{
+        background-image: url('assets/images/spacegalaxy.jpg');
+        height:60%
+    }#parallax1{
+        background-image: url('assets/images/spacewallpaper.jpg');
+        height:40%
+    }
+</style>

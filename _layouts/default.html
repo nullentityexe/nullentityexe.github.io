@@ -39,6 +39,9 @@
 
 
     <style>
+      html{
+        height:100%
+      }
       nav ul li a{
         text-decoration: none;
       }
@@ -57,11 +60,13 @@
         color:black;
         margin:0;
         padding:0;
+        height:100%;
       }
       #main{
         margin-left: 5rem;
-        padding:1rem;
+        padding:0;
         text-align: center;
+        height: 100%;
       }
       body::-webkit-scrollbar{
         width: 0.25 rem;
@@ -135,6 +140,11 @@
       }#toProjects:hover{
         transform: rotate(-100deg);
         transform: scale(1.2);
+      }.nav-images{
+        transition: transform 200ms;
+        transform: rotate(0deg);
+      }.nav-images:hover{
+        transform: rotate(-20deg);
       }
       
 
