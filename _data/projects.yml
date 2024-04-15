@@ -2,3 +2,7 @@
   link: cat/
   image: projects/cat.jpg
   description: Yeah, It's just a bunch of cats...
+- title: Wagoogus
+  link: https://jblob-devs.github.io/wagoogus
+  image: projects/wagoogusthumbnail.png
+  description: A fun physics playground/platformer
