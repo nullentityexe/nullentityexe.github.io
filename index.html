@@ -2,16 +2,112 @@
 layout: default
 ---
 <html>
+   
     <!--parallax is this epico background scroll effect!-->
     
 
     <body>
-    <div class="parallax" id="parallax1"></div>
-        <h2>Hey there!</h2>
+    <div class="particlecontainers" id="particle-container"> </div>
+        <h2 color = "white">Hey there!</h2>
         <img src="assets/images/basicBlob.png">
         <p>My name is Null! <br> I play videogames and mess around with code and other knicknacks.</p>
-    <div class="parallax" id="parallax2"></div>
-    <p>Check out some of my projects</p>
+        <p>Check out some of my projects</p>
+        <div class="particlecontainers"  id="particle-container-1"> </div>
+    <script src="tsparticles.all.bundle.min.js"></script>
+
+   
+   <script>
+        (async () => {
+            await loadAll(tsParticles);
+            let options = {
+                    fullScreen: { enable: false },
+                    particles: {
+                        number: {
+                            value: 10
+                        },
+                        color: {
+                            value: "#ffffff"
+                        },
+                        shape: {
+                            type: "circle"
+                        },
+                        opacity: {
+                            value: 1,
+                            random: true
+                        },
+                        size: {
+                            value: 5,
+                            random: true
+                        },
+                        move: {
+                            enable: true,
+                            speed: 2,
+                            direction: "none",
+                            random: true,
+                            straight: false,
+                            out_mode: "out",
+                            bounce: false,
+                            attract: {
+                            enable: false,
+                            rotateX: 600,
+                            rotateY: 1200
+                            }
+                        },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: "#ffffff",
+                            opacity: 0.4,
+                            width: 1
+                        }
+                        },
+                        interactivity: {
+                        detect_on: "window",
+                        events: {
+                            onhover: {
+                            enable: true,
+                            mode: "trail"
+                            },
+                            onclick: {
+                            enable: true,
+                            mode: "repulse"
+                            }
+                        },
+                        modes: {
+                            trail: {
+                            enable: true,
+                            length: 3, // Length of the trail
+                            fillColor: "#ff0000" // Color of the trail
+                            },
+                            repulse: {
+                            distance: 100, // Distance of repulsion
+                            duration: 0.4
+                            }
+                        }
+                        },
+                        retina_detect: true
+                }
+
+            await tsParticles.load({
+                id: "particle-container",
+                options
+            });
+            await tsParticles.load({
+                id: "particle-container-1",
+                options
+            });
+
+            })();
+    </script>
+    <style>
+        .particlecontainers{
+            position:relative;
+            overflow: hidden;
+            width: 100%;
+            background: black;
+            z-index: -1;
+        }
+    </style>
 </body>
     
 
@@ -26,11 +122,5 @@ layout: default
         background-repeat: no-repeat;
         background-size: cover;
         margin:0;
-    }#parallax2{
-        background-image: url('assets/images/spacegalaxy.jpg');
-        height:60%
-    }#parallax1{
-        background-image: url('assets/images/spacewallpaper.jpg');
-        height:40%
     }
 </style>

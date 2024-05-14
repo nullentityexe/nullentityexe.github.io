@@ -1,8 +1,8 @@
 - title: Cat Generator
-  link: cat/
+  link: /projects/cat/
   image: projects/cat.jpg
   description: Yeah, It's just a bunch of cats...
-- title: Wagoogus
-  link: https://jblob-devs.github.io/wagoogus
+- title: Limbo
+  link: https://jblob-devs.github.io/limbo
   image: projects/wagoogusthumbnail.png
-  description: A fun physics playground/platformer
+  description: A fun physics playground/platformer game

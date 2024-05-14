@@ -17,13 +17,9 @@ layout: default
     }
 </style>
 <html>
-<h1>Projects</h1>
+<h1>Assorted Knickkacks</h1>
 
-
-<h1>
-Widgets
-</h1>
-<h4>Widgets are small "projects" that are often just assorted coded knicknacks.</h4>
+<h4>Interesting things</h4>
 {% for item in site.data.projects %}
         <div class = "project-card">
           <a id="{{item.title}}" class="project-link {% if page.url == item.link%} active{% endif %}" href="{{item.link}}">
