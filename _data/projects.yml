@@ -6,3 +6,8 @@
   link: https://jblob-devs.github.io/limbo
   image: projects/wagoogusthumbnail.png
   description: A fun physics playground/platformer game
+- title: Kitten-ify
+  link: /projects/kittenify/
+  image: projects/kittenifylogo.png
+  description: Everything is better as a kitten
+
