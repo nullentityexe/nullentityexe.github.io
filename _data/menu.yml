@@ -1,11 +1,11 @@
 - title: Home
   link: /
-  image: basicBlob.png
+  image: blobs/basicBlob.png
 
 - title: Blog
   link: /blog/
-  image: slimeBlob.png
+  image: blobs/slimeBlob.png
 
 - title: Projects
   link: /projects
-  image: squishyBlob.png
+  image: blobs/squishyBlob.png
