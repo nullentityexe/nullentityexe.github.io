@@ -173,7 +173,7 @@ One quick google slides assembly later...
 <br>
 Ok let's dissect this. There's alot to see here, but let's only focus on the important bits.  
 A rare drop is a 50% chance, and the most common items are 50 coins, at around 40%, 25 Power Points at 33% and 100 XP Doublers at 21%. These are all chump change. They are so insignificant in the progression they provide.  
-Additionally, thats practially all the drop would give you, as the other 5 percent is credits and bling (cosmetic currency), and with only a 5% chance, good luck getting that 20 bling.  
+Additionally, thats practically all the drop would give you, as the other 5 percent is credits and bling (cosmetic currency), and with only a 5% chance, good luck getting that 20 bling.  
 Ok well, we still have other drop rarities. A super rare drop has around a 1/3 chance, which isn't terrible. Let's see what we can get.
 
 ![superraredrop](/assets/images/blog/2024-01-15/superrare.webp)
