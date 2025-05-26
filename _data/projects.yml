@@ -10,4 +10,12 @@
   link: /projects/kittenify/
   image: projects/kittenifylogo.png
   description: Everything is better as a kitten
+- title: Kosmomart
+  link: https://github.com/jblob-devs/KosmoMart
+  image: entity/redsmile.png
+  description: An AI powered space dialogue game
+- title: NullStrider
+  link: /projects/nullstridermusic
+  image: projects/refraction.jpg
+  description: Check out some of my tunes
 
